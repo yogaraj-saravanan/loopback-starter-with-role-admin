@@ -1,0 +1,33 @@
+{
+  "name": "usermeta",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "height": {
+      "type": "string",
+      "required": true
+    },
+    "weight": {
+      "type": "string",
+      "required": true
+    },
+    "userId": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
